@@ -1,0 +1,109 @@
+Warning: Scenario func_slow_rcbest_CCbest_ffgnp0p88vm40c_LT_hold is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario func_slow_rcworst_CCworst_ffgnp0p88v125c_ccs_ML_hold is not configured for setup analysis: skipping. (UIC-058)
+Warning: Scenario scan_shift_rcbest_CCbest_ffgnp0p88vm40c_LT_hold is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+        -groups clk
+        -transition_time
+        -capacitance
+        -physical
+Design : pe_blast
+Version: S-2021.06-SP2
+Date   : Sun May  1 23:04:46 2022
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, AOCV, CRPR'. (TIM-050)
+
+  Startpoint: u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_tmp_z_reg_31__RETIME_0 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_39_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_16__RETIME_0_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_28_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_21__RETIME_0_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_27_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_22_4 (rising edge-triggered flip-flop clocked by clk)
+  Mode: func_slow
+  Corner: cworst_CCworst_T_ssgnp0p72vm40c_ccs_WCL_setup
+  Scenario: func_slow_cworst_CCworst_T_ssgnp0p72vm40c_ccs_WCL_setup
+  Path Group: clk
+  Path Type: max
+
+  Point                                             Cap       Trans      Incr       Path           Location
+  ------------------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                  0.000      0.000
+  clock network delay (propagated)                                       0.447      0.447
+
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_tmp_z_reg_31__RETIME_0/CP (SDFCNQD4BWP16P90CPDLVT)
+                                                              0.070      0.000      0.447 r    (624.62,351.07)
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_tmp_z_reg_31__RETIME_0/Q (SDFCNQD4BWP16P90CPDLVT)
+                                                   0.019      0.026      0.109      0.557 f    (624.19,351.07)
+  compile_SGI36_599314/ZN (INR2D4BWP16P90CPDLVT)   0.008      0.025      0.034      0.591 r    (651.28,364.32)
+  compile_ctmTdsLR_1_564494/ZN (INVD4BWP16P90CPDLVT)
+                                                   0.003      0.009      0.012      0.603 f    (650.49,364.32)
+  compile_ctmTdsLR_2_564495/ZN (ND2D4BWP16P90CPDLVT)
+                                                   0.006      0.012      0.010      0.613 r    (647.77,364.32)
+  u_pe_pe_compute_simd1_ctmi_273304/ZN (AOI31D2BWP16P90CPDLVT)
+                                                   0.003      0.030      0.030      0.644 f    (646.88,364.30)
+  compile_ctmTdsLR_1_763725/ZN (INR2D2BWP16P90CPDULVT)
+                                                   0.002      0.012      0.012      0.656 r    (647.06,365.42)
+  compile_ctmTdsLR_2_914119/ZN (IOA21D4BWP16P90CPDULVT)
+                                                   0.007      0.012      0.019      0.675 r    (647.94,366.03)
+  compile_ctmTdsLR_2_563938/ZN (INVD4BWP16P90CPDLVT)
+                                                   0.006      0.010      0.012      0.687 f    (648.75,364.90)
+  compile_ctmTdsLR_1_915821/Z (AN2D4BWP16P90CPDLVT)
+                                                   0.007      0.012      0.025      0.712 f    (652.54,366.05)
+  compile_ctmTdsLR_2_917171/ZN (OAI211D4BWP16P90CPDLVT)
+                                                   0.007      0.025      0.015      0.727 r    (651.46,363.23)
+  compile_ctmTdsLR_1_985744/Z (AN2D4BWP16P90CPDLVT)
+                                                   0.012      0.017      0.033      0.760 r    (654.25,360.29)
+  u_pe_pe_compute_simd1_ctmi_367704/Z (AN2D4BWP16P90CPDLVT)
+                                                   0.005      0.010      0.031      0.791 r    (653.89,351.65)
+  compile_ctmTdsLR_1_577289/ZN (OAOI211D2BWP16P90CPDLVT)
+                                                   0.002      0.020      0.018      0.809 f    (653.55,352.80)
+  u_pe_pe_compute_simd1_ctmi_288852/ZN (OAOI211D2BWP16P90CPDLVT)
+                                                   0.001      0.020      0.022      0.831 r    (652.65,352.80)
+  u_pe_pe_compute_simd1_ctmi_288851/ZN (ND4D2BWP16P90CPDULVT)
+                                                   0.004      0.024      0.020      0.851 f    (652.81,353.31)
+  clock_opt_opto_ctmTdsLR_1_1055606/ZN (IIND3D4BWP16P90CPDLVT)
+                                                   0.001      0.013      0.030      0.881 f    (650.83,352.80)
+  compile_ctmTdsLR_2_669153/ZN (NR3D2BWP16P90CPDULVT)
+                                                   0.003      0.013      0.012      0.893 r    (649.57,353.38)
+  compile_ctmTdsLR_1_669152/ZN (NR2D3BWP16P90CPDULVT)
+                                                   0.008      0.014      0.011      0.905 f    (647.08,352.78)
+  u_pe_pe_compute_simd1_ctmi_370264/ZN (NR2D4BWP16P90CPDULVT)
+                                                   0.010      0.021      0.016      0.921 r    (631.21,346.46)
+  compile_ctmTdsLR_1_733198/ZN (ND4D2BWP16P90CPDULVT)
+                                                   0.002      0.015      0.020      0.941 f    (631.03,345.95)
+  compile_ctmTdsLR_2_733199/ZN (IOA21D2BWP16P90CPDULVT)
+                                                   0.005      0.013      0.012      0.953 r    (632.22,345.91)
+  compile_ctmTdsLR_1_618848/ZN (AOI21D2BWP16P90CPDULVT)
+                                                   0.002      0.013      0.013      0.966 f    (632.70,347.02)
+  compile_ctmTdsLR_1_665004/Z (OR2D4BWP16P90CPDULVT)
+                                                   0.007      0.008      0.017      0.983 f    (632.11,350.50)
+  compile_ctmTdsLR_1_699385/ZN (ND2D8BWP16P90CPDULVT)
+                                                   0.016      0.011      0.009      0.992 r    (631.66,353.96)
+  compile_ctmTdsLR_1_664084/ZN (ND2D2BWP16P90CPDULVT)
+                                                   0.003      0.012      0.013      1.005 f    (631.12,359.71)
+  compile_ctmTdsLR_1_663407/ZN (OAI21D2BWP16P90CPDULVT)
+                                                   0.004      0.019      0.016      1.021 r    (631.08,360.27)
+  compile_ctmTdsLR_2_663192/ZN (NR2D2BWP16P90CPDULVT)
+                                                   0.002      0.008      0.009      1.030 f    (631.57,363.17)
+  compile_ctmTdsLR_1_663191/ZN (AOI21D2BWP16P90CPDULVT)
+                                                   0.001      0.006      0.007      1.037 r    (631.26,362.61)
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_39_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_16__RETIME_0_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_28_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_21__RETIME_0_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_27_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_22_4/D (SDFSNQD2BWP16P90CPDLVT)
+                                                              0.006      0.000      1.037 r    (629.43,362.66)
+  data arrival time                                                                 1.037
+
+  clock clk (rise edge)                                                  0.571      0.571
+  clock network delay (propagated)                                       0.325      0.896
+  clock reconvergence pessimism                                          0.039      0.935
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_39_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_16__RETIME_0_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_28_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_21__RETIME_0_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_27_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_22_4/CP (SDFSNQD2BWP16P90CPDLVT)
+                                                              0.060      0.000      0.935 r    (627.46,362.59)
+  clock uncertainty                                                     -0.053      0.882
+  library setup time                                                    -0.013      0.869
+  data required time                                                                0.869
+  ------------------------------------------------------------------------------------------------------------------
+  data required time                                                                0.869
+  data arrival time                                                                -1.037
+  ------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                 -0.168
+
+
+1

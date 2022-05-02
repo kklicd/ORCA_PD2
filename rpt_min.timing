@@ -1,0 +1,52 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+        -groups clk
+        -transition_time
+        -capacitance
+        -physical
+Design : pe_blast
+Version: S-2021.06-SP2
+Date   : Sun May  1 23:04:57 2022
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis, AWP, AOCV, CRPR'. (TIM-050)
+
+  Startpoint: u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_tmp_z_reg_31__RETIME_0 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_35_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_30_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_24_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_21_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_29_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_18__RETIME_2_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_23_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_16__RETIME_1_3 (rising edge-triggered flip-flop clocked by clk)
+  Mode: scan_shift
+  Corner: rcbest_CCbest_ffgnp0p88vm40c_LT_hold
+  Scenario: scan_shift_rcbest_CCbest_ffgnp0p88vm40c_LT_hold
+  Path Group: clk
+  Path Type: min
+
+  Point                                             Cap       Trans      Incr       Path           Location
+  ------------------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                                 50.000     50.000
+  clock network delay (propagated)                                       0.219     50.219
+
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_tmp_z_reg_31__RETIME_0/CP (SDFCNQD4BWP16P90CPDLVT)
+                                                              0.048      0.000     50.219 r    (624.62,351.07)
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_tmp_z_reg_31__RETIME_0/Q (SDFCNQD4BWP16P90CPDLVT)
+                                                   0.017      0.016      0.044     50.263 f    (624.19,351.07)
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_35_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_30_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_24_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_21_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_29_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_18__RETIME_2_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_23_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_16__RETIME_1_3/SI (SDFSNQD2BWP16P90CPDLVT)
+                                                              0.016      0.000     50.263 f    (626.11,351.62)
+  data arrival time                                                                50.263
+
+  clock clk (rise edge)                                                 50.000     50.000
+  clock network delay (propagated)                                       0.223     50.223
+  clock reconvergence pessimism                                         -0.017     50.206
+  u_pe_pe_compute_simd1_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_35_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_30_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_24_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_21_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_29_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_18__RETIME_2_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_23__RETIME_23_fp_mac_loop_2__u_fp32_mac_u_adder0_z_reg_16__RETIME_1_3/CP (SDFSNQD2BWP16P90CPDLVT)
+                                                              0.045      0.000     50.206 r    (624.31,351.65)
+  library hold time                                                      0.017     50.223
+  data required time                                                               50.223
+  ------------------------------------------------------------------------------------------------------------------
+  data required time                                                               50.223
+  data arrival time                                                               -50.263
+  ------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                       0.040
+
+
+1
